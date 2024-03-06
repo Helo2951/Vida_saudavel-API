@@ -11,11 +11,11 @@ app.use(cors());
 
 app.use(routes);
 
-migrationRun();
+// migrationRun();
 
 const SERVER_PORT = process.env.PORT || 3000
 
 app.listen(SERVER_PORT, () => {
-    console.log(`Server is running at ${port}`)
+    console.log(`Server is running at ${SERVER_PORT}`)
 });
 
